@@ -11,3 +11,5 @@ const randomNumber = nextSequence();
 const randomChosenColor = buttonColors[randomNumber];
 // Here I am using the "push" array method to add a random color to the "gamePattern" array.
 gamePattern.push(randomChosenColor);
+
+$("#" + randomChosenColor).fadeOut(100).fadeIn(100);

@@ -14,3 +14,9 @@ function nextSequence() {
     var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
     audio.play();
 };
+
+$(".btn").on("click", function(e) {
+    var userChosenColor = e.target.id;
+    console.log(userChosenColor);
+});
+

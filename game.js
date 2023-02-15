@@ -15,10 +15,11 @@ function nextSequence() {
     var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
     audio.play();
 };
-
+// This code below gets the ID from whichever button was clicked and stores it into an array.
 $(".btn").on("click", function(e) {
     var userChosenColor = e.target.id;
+    var name = e.target.id
     userClickedPattern.push(userChosenColor);
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
 });
-
-console.log(userClickedPattern);
